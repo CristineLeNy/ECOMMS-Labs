@@ -1,0 +1,24 @@
+% Nathaniel Racsok
+% Dr. Wu
+% ECE 09433 - ECOMMS
+% Oct 12, 2022
+% Lab 1: Waveform Synthesis and Spectral Analysis
+% Part 2: Comparison between CFT and DFT (FFT)
+
+
+syms x
+fun=heaviside(x)-heaviside(x-.6)+heaviside(x-.7)-heaviside(x-1);
+t=[-1,3];
+fplot(fun,t);
+title('Continuous Time Function Plot');
+xlabel('t (in ms)');
+ylabel('w(t)');
+grid
+
+
+syms y
+func=heaviside
+title('CFT Plot');
+xlabel('t (in ms)');
+ylabel('w(t)');
+grid
